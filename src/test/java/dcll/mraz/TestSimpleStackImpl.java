@@ -63,6 +63,8 @@ public class TestSimpleStackImpl extends TestCase {
     }
 
     public void testPrintStack() {
+        s.push(new Item(14));
+        s.push(new Item(10));
         assertTrue(s.printStack());
     }
 }

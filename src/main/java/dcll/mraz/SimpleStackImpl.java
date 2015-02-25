@@ -31,14 +31,14 @@ public class SimpleStackImpl implements SimpleStack {
     }
 
     public Item pop() throws EmptyStackException {
+        if (pile.isEmpty()) throw new EmptyStackException();
         return pile.pop();
     }
 
     @Override
     public boolean printStack() {
-        for (Item i: pile) {
+        for (Item i: pile)
             System.out.println(i.getElement());
-        }
         return true;
     }
 }
