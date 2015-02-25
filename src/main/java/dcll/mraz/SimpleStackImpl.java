@@ -37,9 +37,8 @@ public class SimpleStackImpl implements SimpleStack {
 
     @Override
     public boolean printStack() {
-        for (Item i: pile) {
+        for (Item i: pile)
             System.out.println(i.getElement());
-        }
         return true;
     }
 }
