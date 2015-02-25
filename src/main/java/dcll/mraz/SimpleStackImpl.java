@@ -31,6 +31,7 @@ public class SimpleStackImpl implements SimpleStack {
     }
 
     public Item pop() throws EmptyStackException {
+        if (pile.isEmpty()) throw new EmptyStackException();
         return pile.pop();
     }
 
