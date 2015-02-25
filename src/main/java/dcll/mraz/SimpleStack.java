@@ -29,4 +29,9 @@ public interface SimpleStack {
      */
     public Item pop() throws EmptyStackException;
 
+    /**
+     * Print all elements of the SimpleStack
+     */
+    public boolean printStack();
+
 }

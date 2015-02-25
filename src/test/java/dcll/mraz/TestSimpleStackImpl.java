@@ -60,6 +60,9 @@ public class TestSimpleStackImpl extends TestCase {
         }
 
         assertTrue(item.getElement() == 65 && s.isEmpty());
+    }
 
+    public void testPrintStack() {
+        assertTrue(s.printStack());
     }
 }

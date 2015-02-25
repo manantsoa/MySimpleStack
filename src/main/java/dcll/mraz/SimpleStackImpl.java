@@ -1,5 +1,6 @@
 package dcll.mraz;
 
+import java.time.Clock;
 import java.util.ArrayDeque;
 import java.util.Deque;
 
@@ -31,5 +32,13 @@ public class SimpleStackImpl implements SimpleStack {
 
     public Item pop() throws EmptyStackException {
         return pile.pop();
+    }
+
+    @Override
+    public boolean printStack() {
+        for (Item i: pile) {
+            System.out.println(i.getElement());
+        }
+        return true;
     }
 }
